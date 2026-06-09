@@ -15,6 +15,10 @@ function updateHUD(player,timerFrames){
   // HP bar
   document.getElementById('hp-bar').style.width=(player.hp/player.maxHp*100)+'%';
   document.getElementById('hp-val').textContent=player.hp;
+  // Stamina bar
+  const stPct=player.stamina/player.maxStamina*100;
+  document.getElementById('st-bar').style.width=stPct+'%';
+  document.getElementById('st-val').textContent=Math.floor(player.stamina);
   // Timer display
   const total=Math.ceil(timerFrames/60);
   const m=Math.floor(total/60), s=total%60;
@@ -26,6 +30,13 @@ function updateHUD(player,timerFrames){
   // Ability slots
   updateSlot('slot-z','oz',player.atkCd,0);
   updateSlot('slot-x','ox',player.specCd,5);
+  // Defend slot — no cooldown, show stamina warning when insufficient
+  const cSlot=document.getElementById('slot-c');
+  if(player.stamina<8){
+    cSlot.classList.remove('ready');
+  } else {
+    cSlot.classList.add('ready');
+  }
 }
 
 function updateSlot(slotId,cdId,cd,maxSec){

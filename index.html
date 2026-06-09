@@ -23,6 +23,7 @@ p{color:#5a4020;font-size:12px;letter-spacing:2px;margin:4px 0;text-align:center
 .bar-outer{width:130px;height:8px;background:#0e0b06;border:1px solid #2a1e0a;border-radius:2px;overflow:hidden}
 .bar-inner{height:100%;border-radius:1px;transition:width .12s}
 .hp-bar{background:linear-gradient(90deg,#702020,#c84040)}
+.st-bar{background:linear-gradient(90deg,#806010,#e8c040)}
 #timer-hud{position:absolute;top:10px;right:14px;font-size:22px;color:#c8952a;display:none;letter-spacing:2px}
 #kills-hud{position:absolute;top:44px;right:14px;font-size:11px;color:#5a4020;display:none;letter-spacing:1px}
 #ability-bar{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);display:none;gap:8px}
@@ -46,18 +47,21 @@ p{color:#5a4020;font-size:12px;letter-spacing:2px;margin:4px 0;text-align:center
     <div class="hero-badge">🛡️ ROME — Iron Will, Iron Discipline</div>
     <p>TESTUDO GUARD: Every 5th hit absorbed restores 8% HP</p>
     <p>and boosts your damage for 4 seconds</p>
-    <p class="hint">Arrow Keys · Move &nbsp;|&nbsp; Z · Attack &nbsp;|&nbsp; X · Shield Bash</p>
+    <p class="hint">Arrow Keys · Move &nbsp;|&nbsp; Z · Attack &nbsp;|&nbsp; C · Block &nbsp;|&nbsp; X · Special</p>
+    <p class="hint" style="color:#806010">All moves cost Stamina · Regen when idle</p>
     <p style="color:#c8952a;margin-top:12px">Survive <strong>2 minutes</strong> to claim victory</p>
     <button class="btn" onclick="startGame()">MARCH TO BATTLE</button>
   </div>
   <div id="hud">
     <div class="bar-row">HP<div class="bar-outer"><div class="bar-inner hp-bar" id="hp-bar" style="width:100%"></div></div><span id="hp-val">130</span></div>
+    <div class="bar-row">ST<div class="bar-outer"><div class="bar-inner st-bar" id="st-bar" style="width:100%"></div></div><span id="st-val">512</span></div>
   </div>
   <div id="timer-hud">2:00</div>
   <div id="kills-hud">0 SLAIN</div>
   <div id="ability-bar">
     <div class="slot ready" id="slot-z"><span>⚔️</span><span class="key">Z</span></div>
-    <div class="slot" id="slot-x"><span>🛡️</span><span class="key">X</span></div>
+    <div class="slot ready" id="slot-c"><span>🔰</span><span class="key">C</span></div>
+    <div class="slot" id="slot-x"><span>💥</span><span class="key">X</span></div>
   </div>
   <div id="dmg-layer"></div>
   <div class="screen" id="win-screen">
@@ -73,6 +77,7 @@ p{color:#5a4020;font-size:12px;letter-spacing:2px;margin:4px 0;text-align:center
     <button class="btn" onclick="resetGame()">RISE AGAIN</button>
   </div>
 </div>
+<script src="src/config.js"></script>
 <script src="src/player.js"></script>
 <script src="src/enemies.js"></script>
 <script src="src/ui.js"></script>

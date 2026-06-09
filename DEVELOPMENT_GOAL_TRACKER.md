@@ -88,10 +88,10 @@ Ship MVP to friends and collect feedback
 - Deployed to GitHub Pages and fixed script path bug
 **Notes:** GitHub Pages needed `src/` paths instead of `../src/` at root level
 
-### Tuesday [Date]
+### Tuesday 2026-06-09
 **Planned:** Recruit beta testers, send game link
-**Actual:** [To be filled in]
-**Notes:**
+**Actual:** Added full stamina system — ST bar in HUD, C-key block (costs 8/frame), all abilities cost stamina, movement costs stamina, regen when idle. Halved all enemy speeds for better pacing (Goblin 3.2→1.6, Orc 2.1→1.05, Troll 1.1→0.55).
+**Notes:** Game is noticeably more tactical now — stamina management adds real decisions between attacking, blocking, and moving
 
 ### Wednesday [Date]
 **Planned:** Follow up with testers, collect feedback
@@ -352,6 +352,8 @@ Record every win, no matter how small:
 - ✓ Arrow-key movement, Z attack, X special, 2-minute survival win condition
 - ✓ Deployed to GitHub Pages — https://khash89.github.io/conquest-mvp/
 - ✓ Fixed GitHub Pages script path bug (../src/ → src/)
+- ✓ Full stamina system: ST bar, C-block, all moves cost stamina, regen when idle
+- ✓ Rebalanced enemy speeds for better game feel
 
 ## Week 2
 - ✓ [Achievement]
@@ -438,10 +440,10 @@ Every Monday, I:
 
 # 📍 CURRENT STATUS
 
-**Last Updated:** 2026-06-08
+**Last Updated:** 2026-06-09
 **Current Week:** Week 1
-**Current Stage:** MVP Deploy — game is live
-**Overall Progress:** MVP built and deployed ✅ · Awaiting beta feedback
+**Current Stage:** MVP Polish — stamina system complete
+**Overall Progress:** MVP built and deployed ✅ · Stamina system added ✅ · Awaiting beta feedback
 
 **Next Update:** 2026-06-13 (Friday)
 
