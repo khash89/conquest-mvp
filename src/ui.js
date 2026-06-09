@@ -32,7 +32,7 @@ function updateHUD(player,timerFrames){
   updateSlot('slot-x','ox',player.specCd,5);
   // Defend slot — no cooldown, show stamina warning when insufficient
   const cSlot=document.getElementById('slot-c');
-  if(player.stamina<8){
+  if(player.stamina<CONFIG.staminaCosts.defend){
     cSlot.classList.remove('ready');
   } else {
     cSlot.classList.add('ready');

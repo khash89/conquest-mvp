@@ -134,7 +134,7 @@ class Player {
     const arc=(f,a,s)=>{ctx.save();ctx.globalAlpha=a;ctx.fillStyle=s;ctx.beginPath();f();ctx.fill();ctx.restore();};
     if(this.buff>0) arc(()=>ctx.arc(this.x,this.y,this.radiusHitBox+12,0,Math.PI*2),.25,'#7090e0');
     if(this.atkAnim>0){
-      arc(()=>{ctx.moveTo(this.x,this.y);ctx.arc(this.x,this.y,this.atkRangePx,this.facing-Math.PI/3,this.facing+Math.PI/3);ctx.closePath();},.4,'#a0c8ff');
+      arc(()=>{ctx.moveTo(this.x,this.y);ctx.arc(this.x,this.y,this.atkRangePx,this.facing-this.atkArc,this.facing+this.atkArc);ctx.closePath();},.4,'#a0c8ff');
     }
     if(this.defending){
       ctx.save();ctx.strokeStyle='#a0e0ff';ctx.lineWidth=4;ctx.globalAlpha=0.75;
