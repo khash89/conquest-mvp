@@ -7,7 +7,7 @@
 
 ## 📊 CURRENT GAME: CONQUEST RPG MVP
 
-**Start Date:** [Today]
+**Start Date:** 2026-06-08
 **Current Stage:** Stage 1 - MVP
 **Target Stage:** Stage 2 - Core Loop (by week 4)
 
@@ -17,10 +17,9 @@
 
 ## Goal 1: Ship MVP by End of Week 1
 **Status:** IN PROGRESS
-- [ ] Define MVP (remove 87% of features)
-- [ ] Ask Claude Code to create MVP version
-- [ ] Download and test locally
-- [ ] Deploy to GitHub Pages
+- [x] Define MVP (remove 87% of features)
+- [x] Ask Claude Code to create MVP version
+- [x] Deploy to GitHub Pages — https://khash89.github.io/conquest-mvp/
 - [ ] Recruit 10 beta testers
 - [ ] Collect first feedback
 
@@ -61,34 +60,41 @@
 ---
 
 # 📅 WEEK 1 TRACKER
-**Week of:** [Today's date]
+**Week of:** 2026-06-08
 **Stage:** MVP Deploy
 
 ## Weekly Goal
 Ship MVP to friends and collect feedback
 
 ## Planned Actions
-- [ ] Create MVP with Claude Code
-- [ ] Test locally
-- [ ] Deploy to GitHub Pages
+- [x] Create MVP with Claude Code
+- [x] Test locally
+- [x] Deploy to GitHub Pages
 - [ ] Message 10 friends
 - [ ] Create feedback form
 - [ ] Collect responses
 
 ## Daily Log
 
-### Monday [Date]
+### Monday 2026-06-08
 **Planned:** Define MVP, create with Claude Code
-**Actual:** [To be filled in]
-**Notes:** 
+**Actual:** Built full MVP. 5 files, 394 lines total.
+- `public/index.html` — layout, styles, screens
+- `src/player.js` — Roman warrior, attack arc, Shield Bash, Testudo passive
+- `src/enemies.js` — Goblin / Orc / Troll with scaling wave spawner
+- `src/ui.js` — HUD, arena draw, screen switching
+- `src/game.js` — game loop, input, win/lose logic
+- Controls: Arrow Keys move, Z attack, X Shield Bash
+- Deployed to GitHub Pages and fixed script path bug
+**Notes:** GitHub Pages needed `src/` paths instead of `../src/` at root level
 
 ### Tuesday [Date]
-**Planned:** Test locally, fix bugs if needed
+**Planned:** Recruit beta testers, send game link
 **Actual:** [To be filled in]
 **Notes:**
 
 ### Wednesday [Date]
-**Planned:** Deploy to GitHub Pages
+**Planned:** Follow up with testers, collect feedback
 **Actual:** [To be filled in]
 **Notes:**
 
@@ -105,9 +111,9 @@ Ship MVP to friends and collect feedback
 ## End of Week Summary
 
 ### What I Achieved
-- [ ] 
-- [ ] 
-- [ ] 
+- [x] Built MVP in one session with Claude Code
+- [x] Deployed live to https://khash89.github.io/conquest-mvp/
+- [ ] Collected beta feedback (pending)
 
 ### Feedback from Beta Testers
 ```
@@ -289,7 +295,7 @@ Use this to see big picture progress:
 
 | Stage | Weeks | Status | Target Score | Current Score |
 |-------|-------|--------|--------------|---------------|
-| MVP | 1 | IN PROGRESS | 6/10 | TBD |
+| MVP | 1 | ✅ BUILT · LIVE | 6/10 | TBD (awaiting feedback) |
 | Core Loop | 2-4 | PENDING | 8/10 | TBD |
 | Depth | 5-8 | PENDING | 8.5/10 | TBD |
 | Polish | 9-10 | PENDING | 9/10 | TBD |
@@ -338,10 +344,14 @@ WEEK 4: Fun 8.5/10, Playtime 9 min, Completion 90%
 
 Record every win, no matter how small:
 
-## Week 1
-- ✓ [Achievement]
-- ✓ [Achievement]
-- ✓ [Achievement]
+## Week 1 (2026-06-08)
+- ✓ Defined MVP scope — stripped 87% of features from original conquest-rpg.html
+- ✓ Built 5-file modular game in one session: player, enemies, ui, game, index
+- ✓ Roman warrior with Testudo Guard passive, attack arc, Shield Bash
+- ✓ 3 enemy types (Goblin, Orc, Troll) with scaling wave spawner
+- ✓ Arrow-key movement, Z attack, X special, 2-minute survival win condition
+- ✓ Deployed to GitHub Pages — https://khash89.github.io/conquest-mvp/
+- ✓ Fixed GitHub Pages script path bug (../src/ → src/)
 
 ## Week 2
 - ✓ [Achievement]
@@ -428,12 +438,12 @@ Every Monday, I:
 
 # 📍 CURRENT STATUS
 
-**Last Updated:** [Today]
+**Last Updated:** 2026-06-08
 **Current Week:** Week 1
-**Current Stage:** MVP Deploy
-**Overall Progress:** Starting
+**Current Stage:** MVP Deploy — game is live
+**Overall Progress:** MVP built and deployed ✅ · Awaiting beta feedback
 
-**Next Update:** [Next Friday]
+**Next Update:** 2026-06-13 (Friday)
 
 ---
 
